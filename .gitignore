@@ -2,3 +2,5 @@
 .bigquery
 .repl
 target
+data-synthesiser/venv
+data-synthesiser/output
