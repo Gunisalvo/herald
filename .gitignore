@@ -2,5 +2,5 @@
 .bigquery
 .repl
 target
-test-rig/venv
+Pipfile.lock
 **/__pycache__
