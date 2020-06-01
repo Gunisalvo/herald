@@ -15,4 +15,4 @@ def info():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=config[environment].getint("socialNetworkPort"))
+    app.run(debug=True, port=config[environment].getint("socialNetworkPort"), host="0.0.0.0")

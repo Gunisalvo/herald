@@ -44,6 +44,27 @@ services:
     networks:
       - herald
 
+  #Mocks
+  socialNetwork:
+    image: gunisalvo/herald-mocks:0.0.2
+    container_name: socialNetwork
+    environment:
+      MOCK_NAME: social_network
+    ports:
+      - 9001:9001
+    networks:
+      - herald
+
+  kyc:
+    image: gunisalvo/herald-mocks:0.0.2
+    container_name: kyc
+    environment:
+      MOCK_NAME: kyc
+    ports:
+      - 9002:9002
+    networks:
+      - herald
+
   #SQL Databases
   operationalDB:
     image: postgres
